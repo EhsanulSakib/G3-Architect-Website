@@ -9,6 +9,26 @@ header {
   background: rgba(255, 144, 14, 0.1);
 }
 
+.text-black {
+  color: #131313;
+}
+
+.text-light-gray {
+  color: #424242;
+}
+
+.btn-primary {
+  width: 180px;
+  padding: 1.125rem 0;
+  border-radius: 8px;
+  font-size: 1.125rem;
+  border: none;
+  font-weight: 600;
+  background: #ff900e;
+  color: #fff;
+  text-align: center;
+}
+
 /* navbar */
 nav {
   display: flex;
@@ -18,7 +38,6 @@ nav {
 
 .logo {
   cursor: pointer;
-  color: #131313;
   font-size: 3rem;
   font-weight: 700;
 }
@@ -32,11 +51,40 @@ nav ul {
 nav ul li a {
   cursor: pointer;
   text-decoration: none;
-  color: #424242;
   font-size: 1.125rem;
   font-weight: 500;
 }
 
+/* coverpage */
+.coverpage {
+  margin: 3.125rem auto;
+  margin-bottom: 0;
+}
+
+.cover-text {
+  max-width: 862px;
+  margin: auto;
+  text-align: center;
+}
+.cover-title {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 3.125rem;
+}
+
+.coverpage button {
+  margin: 3rem 0 4rem 0;
+}
+
+.cover-img {
+  display: flex;
+  justify-content: center;
+}
+
+.cover-img img {
+  width: 80%;
+  padding-bottom: 3rem;
+}
 /* responsive design */
 /* tablet */
 @media screen and (max-width: 768px) {
@@ -52,3 +100,14 @@ nav ul li a {
 }
 
 /* mobile */
+@media screen and (max-width: 576px) {
+  nav ul {
+    gap: 1rem;
+  }
+  .coverpage {
+    padding: 0.5rem;
+  }
+  .cover-img img {
+    width: 100%;
+  }
+}
